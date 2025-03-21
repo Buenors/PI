@@ -1,0 +1,6 @@
+frase = input("Digite a frase: ")
+fralow = frase.lower()
+qtd_a = fralow.count('a')
+primeirapos = fralow.find('a')
+ultimapos = fralow.rfind('a')
+print(f'A aparece {qtd_a} vezes \nA aparece pela primeira vez na {primeirapos+1} posição \nA aparece pela última vez na {ultimapos+1} posição')
