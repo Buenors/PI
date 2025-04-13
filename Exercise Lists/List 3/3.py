@@ -1,15 +1,9 @@
-A = int(input('valor do dado de Alice: '))
-B = int(input('valor do dado de Bob: '))
-E = int(input('valor do dado de Eva: '))
+f = str(input('Contar as vogais da frase: '))
+f_lower = f.lower()
+vogais = 0
 
-if A > B and E:
-    print('Alice venceu')
-
-elif B > A and E:
-    print('Bob venceu')
-    
-elif E > A and B:
-    print('Eva venceu')
-
-elif A == B or A == E or B == E:
-    print('Empate')
+for letter in f_lower:
+    if letter.lower() in 'aeiou':
+        vogais += 1
+        
+print(f'A frase({f}) tem {vogais} vogais')

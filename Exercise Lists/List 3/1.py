@@ -1,25 +1,7 @@
-n = int(input('Número de partidas: '))
-soma = 0
-for i in range (n):
-    x = int(input('Diferença de pontos da Maria: '))
-    
-    if x > 0:
-        if x <144:
-            print('Ganhou 88 reais')
-            soma += 88
-        else:
-            print('Ganhou 176 reais')
-            soma +=176
-            
-    elif x == 0:
-        print('Empate')
-    
-    else:
-        if x <= -144:
-            print('Perdeu 176 reais')
-            soma -= 176
-        else:
-            print('Perdeu 88 reais')
-            soma -= 88
+w = str(input('Palavra que você deseja verificar se é um palíndromo: '))
+wl = w.lower()
+if wl == wl[::-1]:
+    print(f'A palavra {w} é um palíndromo')
 
-print('Saldo final R${soma},00')
+else:
+    print(f'A palavra {w} não é um palíndromo')
